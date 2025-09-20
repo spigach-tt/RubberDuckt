@@ -1,26 +1,22 @@
-﻿using Rhino;
+﻿
+// Stop server
+using Rhino;
 using Rhino.Commands;
-using Rhino.Geometry;
-using Rhino.Input;
-using Rhino.Input.Custom;
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
+using throughline.plugin.Infrastructure;
 
 namespace throughline.plugin
 {
-    public class ThroughLineStopCommand : Command
+    public class ThroughlineStopCommand : Command
     {
-        public ThroughLineStopCommand() => Instance = this;
-        public static ThroughLineStopCommand Instance { get; private set; }
-        public override string EnglishName => "tlStop";
+        public static ThroughlineStopCommand Instance { get; private set; }
+        public ThroughlineStopCommand() => Instance = this;
+        public override string EnglishName => "ThroughlineStop";
 
         protected override Result RunCommand(RhinoDoc doc, RunMode mode)
         {
-            Task.Run(() => ThroughlineMcpServer.StopAsync());
-            RhinoApp.WriteLine("Throughline MCP server: stopping…");
+            RhinoMcpServer.StopAsync().GetAwaiter().GetResult();
+            RhinoApp.WriteLine("[MCP] Server stopped.");
             return Result.Success;
         }
     }
-
 }

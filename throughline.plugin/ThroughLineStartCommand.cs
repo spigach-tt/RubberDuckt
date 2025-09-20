@@ -1,21 +1,29 @@
 ﻿using Rhino;
 using Rhino.Commands;
-using System.Threading.Tasks;
+using throughline.plugin.Infrastructure;
 
 namespace throughline.plugin
 {
-    public class ThroughLineStartCommend : Command
+    // Start server
+    public class ThroughlineStartCommand : Command
     {
-        public ThroughLineStartCommend() => Instance = this;
-        public static ThroughLineStartCommend Instance { get; private set; }
-        public override string EnglishName => "tlStart";
+        public static ThroughlineStartCommand Instance { get; private set; }
+        public ThroughlineStartCommand() => Instance = this;
+        public override string EnglishName => "ThroughlineStart";
 
         protected override Result RunCommand(RhinoDoc doc, RunMode mode)
         {
-            // Start the MCP server host in the background
-            Task.Run(() => ThroughlineMcpServer.StartAsync());
-
-            RhinoApp.WriteLine("Throughline MCP server: started (STDIO).");
+            if (!RhinoMcpServer.IsRunning)
+            {
+                // You can pass a custom URL/port here if you prefer:
+                // RhinoMcpServer.Start("http://127.0.0.1:9009");
+                RhinoMcpServer.Start();
+                RhinoApp.WriteLine($"[MCP] HTTP server started at {RhinoMcpServer.BaseUrl} (endpoints: /sse, /messages)");
+            }
+            else
+            {
+                RhinoApp.WriteLine("[MCP] Server already running.");
+            }
             return Result.Success;
         }
     }

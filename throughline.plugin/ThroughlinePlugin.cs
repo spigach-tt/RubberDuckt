@@ -11,15 +11,15 @@ namespace throughline.plugin
     /// attributes in AssemblyInfo.cs (you might need to click "Project" ->
     /// "Show All Files" to see it in the "Solution Explorer" window).</para>
     ///</summary>
-    public class throughline : Rhino.PlugIns.PlugIn
+    public class ThroughlinePlugin : Rhino.PlugIns.PlugIn
     {
-        public throughline()
+        public ThroughlinePlugin()
         {
             Instance = this;
         }
 
-        ///<summary>Gets the only instance of the throughline plug-in.</summary>
-        public static throughline Instance { get; private set; }
+        ///<summary>Gets the only instance of the ThroughlinePlugin plug-in.</summary>
+        public static ThroughlinePlugin Instance { get; private set; }
 
         // You can override methods here to change the plug-in behavior on
         // loading and shut down, add options pages to the Rhino _Option command
