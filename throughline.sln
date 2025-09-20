@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36429.23 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "throughline.plugin", "throughline.plugin\throughline.plugin.csproj", "{116E8A28-9747-45B2-8D0A-2D7470999754}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{116E8A28-9747-45B2-8D0A-2D7470999754}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{116E8A28-9747-45B2-8D0A-2D7470999754}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{116E8A28-9747-45B2-8D0A-2D7470999754}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{116E8A28-9747-45B2-8D0A-2D7470999754}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {14469350-02F5-43A5-8D01-FFC16ED1ECA0}
+	EndGlobalSection
+EndGlobal
