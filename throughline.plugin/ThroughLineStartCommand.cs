@@ -15,10 +15,9 @@ namespace throughline.plugin
         {
             if (!RhinoMcpServer.IsRunning)
             {
-                // You can pass a custom URL/port here if you prefer:
-                // RhinoMcpServer.Start("http://127.0.0.1:9009");
                 RhinoMcpServer.Start();
-                RhinoApp.WriteLine($"[MCP] HTTP server started at {RhinoMcpServer.BaseUrl} (endpoints: /sse, /messages)");
+                // Consider removing this next line or change to “starting…”
+                RhinoApp.WriteLine("[MCP] Starting HTTP server…");
             }
             else
             {

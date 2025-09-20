@@ -2,27 +2,27 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Server.Kestrel.Core;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using ModelContextProtocol.AspNetCore;   // MapMcp()
-using ModelContextProtocol.Server;       // AddMcpServer(), WithToolsFromAssembly()
+using ModelContextProtocol.AspNetCore;
+using ModelContextProtocol.Server;
+using Rhino;
 using System;
+using System.Diagnostics;
+using System.Net;
 using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
-using Microsoft.Extensions.Hosting;
 
 namespace throughline.plugin.Infrastructure
 {
-    /// <summary>
-    /// Starts an HTTP/SSE MCP server (Kestrel) inside the Rhino process.
-    /// </summary>
     public static class RhinoMcpServer
     {
         private static readonly object _gate = new();
         private static CancellationTokenSource? _cts;
         private static Task? _serverTask;
-        private static int _port = 8765; // fixed local port
-        private static string _host = "127.0.0.1";
+        private static int _port = 8765;
+        private static string _host = "localhost";
 
         public static bool IsRunning
         {
@@ -35,48 +35,79 @@ namespace throughline.plugin.Infrastructure
         {
             lock (_gate)
             {
-                if (IsRunning) return;
+                if (IsRunning)
+                {
+                    RhinoApp.WriteLine("[MCP] Already running at " + BaseUrl);
+                    return;
+                }
 
                 if (!string.IsNullOrWhiteSpace(host)) _host = host!;
-                if (port is { } p) _port = p;
+                if (port is int p) _port = p;
 
                 _cts = new CancellationTokenSource();
 
-                _serverTask = Task.Run(async () =>
-                {
-                    var builder = WebApplication.CreateBuilder(new WebApplicationOptions
+                //_serverTask = Task.Run(async () =>
+                //{
+                    try
                     {
-                        Args = Array.Empty<string>()
-                    });
+                        var builder = WebApplication.CreateBuilder(new WebApplicationOptions { Args = Array.Empty<string>() });
 
-                    builder.Logging.ClearProviders();
-                    builder.Logging.AddSimpleConsole(o => o.IncludeScopes = false);
+                        // Logging to Rhino console
+                        builder.Logging.ClearProviders();
+                        builder.Logging.AddSimpleConsole(o => o.IncludeScopes = false);
 
-                    // Register MCP + discover tools in this assembly
-                    builder.Services
-                        .AddMcpServer()
-                        // .WithHttpTransport() // uncomment if your preview requires it
-                        .WithToolsFromAssembly(Assembly.GetExecutingAssembly());
+                        builder.Services
+                            .AddMcpServer()
+                            // If your preview requires explicit HTTP transport, uncomment:
+                            // .WithHttpTransport()
+                            .WithToolsFromAssembly(Assembly.GetExecutingAssembly());
 
-                    // Configure Kestrel explicitly (avoid UseUrls)
-                    builder.WebHost.ConfigureKestrel(options =>
-                    {
-                        options.ListenLocalhost(_port, listenOptions =>
+                        // Force Kestrel + explicit bind; avoid UseUrls ambiguity in class libs
+                        builder.WebHost
+                            .UseKestrel()
+                            .ConfigureKestrel(options =>
+                            {
+                                // Bind explicitly to IPv4 loopback
+                                options.Listen(IPAddress.Loopback, _port, listen =>
+                                {
+                                    listen.Protocols = HttpProtocols.Http1;
+                                });
+
+                                // And to IPv6 loopback (so localhost/::1 also work)
+                                options.Listen(IPAddress.IPv6Loopback, _port, listen =>
+                                {
+                                    listen.Protocols = HttpProtocols.Http1;
+                                });
+
+                                // If you prefer “listen everywhere” instead, use:
+                                // options.ListenAnyIP(_port, listen => listen.Protocols = HttpProtocols.Http1);
+                            });
+
+                        var app = builder.Build();
+
+                        // Optional: simple health
+                        app.MapGet("/", () => new { status = "ok", server = "Rhino MCP" });
+
+                        // MCP HTTP/SSE endpoints (/sse, /messages)
+                        app.MapMcp();
+
+                        // Announce once the server is really listening
+                        var lifetime = app.Services.GetRequiredService<IHostApplicationLifetime>();
+                        lifetime.ApplicationStarted.Register(() =>
                         {
-                            listenOptions.Protocols = HttpProtocols.Http1; // SSE uses HTTP/1
+                            RhinoApp.WriteLine($"[MCP] Listening on {BaseUrl} (endpoints: /sse, /messages)");
                         });
-                    });
 
-                    var app = builder.Build();
-
-                    // Simple health check (no Results helper needed)
-                    app.MapGet("/", () => new { status = "ok", server = "Rhino MCP" });
-
-                    // Expose MCP HTTP/SSE endpoints (e.g., /sse and /messages)
-                    app.MapMcp();
-
-                    await app.RunAsync(_cts!.Token);
-                }, _cts.Token);
+                        app.RunAsync(_cts!.Token);
+                        //await app.RunAsync(_cts!.Token);
+                        RhinoApp.WriteLine($"[MCP] exited");
+                    }
+                    catch (Exception ex)
+                    {
+                        RhinoApp.WriteLine("[MCP] Host failed to start:");
+                        RhinoApp.WriteLine(ex.ToString());
+                    }
+                //}, _cts.Token);
             }
         }
 
@@ -90,7 +121,7 @@ namespace throughline.plugin.Infrastructure
                 _cts?.Cancel();
             }
 
-            try { await running!; } catch { /* ignore during shutdown */ }
+            try { await running!; } catch { /* expected on cancel */ }
 
             lock (_gate)
             {
@@ -98,6 +129,8 @@ namespace throughline.plugin.Infrastructure
                 _cts?.Dispose();
                 _cts = null;
             }
+
+            RhinoApp.WriteLine("[MCP] Server stopped.");
         }
     }
 }
