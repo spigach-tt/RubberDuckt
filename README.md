@@ -23,7 +23,7 @@ This project was developed at the 2025 AECtech Boston hackathon.
 ## Prerequisites
 1. Rhino 8 or newer
 2. Visual Studio 2022
-3. RhinoMCP ([Install here][https://github.com/jingcheng-chen/rhinomcp])
+3. RhinoMCP ([Install here](https://github.com/jingcheng-chen/rhinomcp))
 
 ## Installation Instructions
 1. Open the solution in Visual Studio
