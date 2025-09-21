@@ -25,7 +25,7 @@ This project was developed at the 2025 AECtech Boston hackathon.
 
 1. Rhino 8 or newer
 2. Visual Studio 2022
-3. Fork from RhinoMCP ([Install here](https://github.com/vwnd/rhinomcp))
+3. Install our fork of RhinoMCP ([Install here](https://github.com/vwnd/rhinomcp))
 
 ## Installation Instructions
 
