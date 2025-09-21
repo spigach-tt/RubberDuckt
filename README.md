@@ -32,6 +32,7 @@ This project was developed at the 2025 AECtech Boston hackathon.
 1. Open the solution in Visual Studio
 2. Build as Debug or Release
 3. Find the `.rhp` file in the bin folder and drag it into Rhino
+4. Check out the [RhinoMCP fork](https://github.com/vwnd/rhinomcp) for installation instructions
 
 ## Usage Instructions
 
@@ -42,4 +43,4 @@ This project was developed at the 2025 AECtech Boston hackathon.
 - Not Serviced
 
 2. In Rhino's Properties panel, assign names to room volumes based on their program
-3. Run `DuckParse` to parse your Rhino scene and save the data as a JSON file to disk
+3. Ask your favorite AI chat app (Cursor, Claude Desktop, LM Studio, etc) to help design your MEP layout
