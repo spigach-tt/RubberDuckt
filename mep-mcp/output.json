@@ -1,0 +1,453 @@
+{
+	"object": {
+		"mainTrunk": {
+			"points": [
+				{
+					"x": -5,
+					"y": 9,
+					"z": 2.5
+				},
+				{
+					"x": 0,
+					"y": 9,
+					"z": 2.5
+				},
+				{
+					"x": 15,
+					"y": 9,
+					"z": 2.5
+				},
+				{
+					"x": 20,
+					"y": 9,
+					"z": 2.5
+				}
+			]
+		},
+		"branches": [
+			{
+				"roomId": "9e3dcb45-2553-4d04-8aa2-cf7edfa3aba7",
+				"points": [
+					{
+						"x": 5,
+						"y": 9,
+						"z": 2.5
+					},
+					{
+						"x": 5,
+						"y": 8.5,
+						"z": 2.5
+					},
+					{
+						"x": 5,
+						"y": 4,
+						"z": 2.2
+					}
+				]
+			},
+			{
+				"roomId": "09c5d567-ef68-494d-b5dc-9ff79edb1881",
+				"points": [
+					{
+						"x": 13,
+						"y": 9,
+						"z": 2.5
+					},
+					{
+						"x": 13,
+						"y": 8.5,
+						"z": 2.5
+					},
+					{
+						"x": 11.5,
+						"y": 4,
+						"z": 2.2
+					}
+				]
+			},
+			{
+				"roomId": "c0b94e49-ab8f-4751-9519-10fc7c3cf106",
+				"points": [
+					{
+						"x": 18,
+						"y": 9,
+						"z": 2.5
+					},
+					{
+						"x": 16.5,
+						"y": 9,
+						"z": 2.5
+					},
+					{
+						"x": 16.5,
+						"y": 7.5,
+						"z": 2.2
+					}
+				]
+			},
+			{
+				"roomId": "2e83d153-1b16-4d47-8020-812854ac8b9c",
+				"points": [
+					{
+						"x": 2.5,
+						"y": 9,
+						"z": 2.5
+					},
+					{
+						"x": 2.5,
+						"y": 10,
+						"z": 2.5
+					},
+					{
+						"x": 2.5,
+						"y": 12.5,
+						"z": 2.2
+					}
+				]
+			},
+			{
+				"roomId": "245409c0-e1e5-4f2e-b875-7c91dbafe837",
+				"points": [
+					{
+						"x": 7.5,
+						"y": 9,
+						"z": 2.5
+					},
+					{
+						"x": 7.5,
+						"y": 10,
+						"z": 2.5
+					},
+					{
+						"x": 7.5,
+						"y": 12.5,
+						"z": 2.2
+					}
+				]
+			},
+			{
+				"roomId": "89d2681c-1be0-43e9-aaa6-ceb9840b3764",
+				"points": [
+					{
+						"x": -2.5,
+						"y": 9,
+						"z": 2.5
+					},
+					{
+						"x": -2.5,
+						"y": 9.5,
+						"z": 2.2
+					}
+				]
+			},
+			{
+				"roomId": "8c309d06-2722-406e-abe0-f6c817e7ef25",
+				"points": [
+					{
+						"x": 11.5,
+						"y": 9,
+						"z": 2.5
+					},
+					{
+						"x": 11.5,
+						"y": 12.5,
+						"z": 2.2
+					}
+				]
+			}
+		]
+	},
+	"finishReason": "stop",
+	"usage": {
+		"inputTokens": 7778,
+		"outputTokens": 4630,
+		"totalTokens": 12408,
+		"reasoningTokens": 3648,
+		"cachedInputTokens": 0
+	},
+	"warnings": [],
+	"providerMetadata": {
+		"openai": {
+			"responseId": "resp_68cf4c4d7b908195971ea604050c06ce0c0f6f72eb4858ac",
+			"serviceTier": "default"
+		}
+	},
+	"response": {
+		"id": "resp_68cf4c4d7b908195971ea604050c06ce0c0f6f72eb4858ac",
+		"timestamp": "2025-09-21T00:52:29.000Z",
+		"modelId": "gpt-5-mini-2025-08-07",
+		"headers": {
+			"alt-svc": "h3=\":443\"; ma=86400",
+			"cf-cache-status": "DYNAMIC",
+			"cf-ray": "98259483cf1c901d-BOS",
+			"connection": "keep-alive",
+			"content-length": "7069",
+			"content-type": "application/json",
+			"date": "Sun, 21 Sep 2025 00:53:31 GMT",
+			"openai-organization": "user-nmgnhtmkvy0spswk03efiigl",
+			"openai-processing-ms": "62176",
+			"openai-project": "proj_LTLcsF4c4VznWxQyVXlnKdRv",
+			"openai-version": "2020-10-01",
+			"server": "cloudflare",
+			"set-cookie": "_cfuvid=JSPvxWIm3S147dTBL2JVU0C038Fsj9n9JH7F52XJPjA-1758416011673-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None",
+			"strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+			"x-content-type-options": "nosniff",
+			"x-envoy-upstream-service-time": "62178",
+			"x-ratelimit-limit-requests": "500",
+			"x-ratelimit-limit-tokens": "500000",
+			"x-ratelimit-remaining-requests": "499",
+			"x-ratelimit-remaining-tokens": "492005",
+			"x-ratelimit-reset-requests": "120ms",
+			"x-ratelimit-reset-tokens": "959ms",
+			"x-request-id": "req_dd37284dbdc113acfb47a84a1d934692"
+		},
+		"body": {
+			"id": "resp_68cf4c4d7b908195971ea604050c06ce0c0f6f72eb4858ac",
+			"object": "response",
+			"created_at": 1758415949,
+			"status": "completed",
+			"background": false,
+			"billing": {
+				"payer": "developer"
+			},
+			"error": null,
+			"incomplete_details": null,
+			"instructions": null,
+			"max_output_tokens": null,
+			"max_tool_calls": null,
+			"model": "gpt-5-mini-2025-08-07",
+			"output": [
+				{
+					"id": "rs_68cf4c4e27888195b6e73067466e7f640c0f6f72eb4858ac",
+					"type": "reasoning",
+					"summary": []
+				},
+				{
+					"id": "msg_68cf4c7d31d08195931daf32fb42b8f50c0f6f72eb4858ac",
+					"type": "message",
+					"status": "completed",
+					"content": [
+						{
+							"type": "output_text",
+							"annotations": [],
+							"logprobs": [],
+							"text": "{\n  \"mainTrunk\": {\n    \"points\": [\n      {\n        \"x\": -5,\n        \"y\": 9,\n        \"z\": 2.5\n      },\n      {\n        \"x\": 0,\n        \"y\": 9,\n        \"z\": 2.5\n      },\n      {\n        \"x\": 15,\n        \"y\": 9,\n        \"z\": 2.5\n      },\n      {\n        \"x\": 20,\n        \"y\": 9,\n        \"z\": 2.5\n      }\n    ]\n  },\n  \"branches\": [\n    {\n      \"roomId\": \"9e3dcb45-2553-4d04-8aa2-cf7edfa3aba7\",\n      \"points\": [\n        {\n          \"x\": 5,\n          \"y\": 9,\n          \"z\": 2.5\n        },\n        {\n          \"x\": 5,\n          \"y\": 8.5,\n          \"z\": 2.5\n        },\n        {\n          \"x\": 5,\n          \"y\": 4,\n          \"z\": 2.2\n        }\n      ]\n    },\n    {\n      \"roomId\": \"09c5d567-ef68-494d-b5dc-9ff79edb1881\",\n      \"points\": [\n        {\n          \"x\": 13,\n          \"y\": 9,\n          \"z\": 2.5\n        },\n        {\n          \"x\": 13,\n          \"y\": 8.5,\n          \"z\": 2.5\n        },\n        {\n          \"x\": 11.5,\n          \"y\": 4,\n          \"z\": 2.2\n        }\n      ]\n    },\n    {\n      \"roomId\": \"c0b94e49-ab8f-4751-9519-10fc7c3cf106\",\n      \"points\": [\n        {\n          \"x\": 18,\n          \"y\": 9,\n          \"z\": 2.5\n        },\n        {\n          \"x\": 16.5,\n          \"y\": 9,\n          \"z\": 2.5\n        },\n        {\n          \"x\": 16.5,\n          \"y\": 7.5,\n          \"z\": 2.2\n        }\n      ]\n    },\n    {\n      \"roomId\": \"2e83d153-1b16-4d47-8020-812854ac8b9c\",\n      \"points\": [\n        {\n          \"x\": 2.5,\n          \"y\": 9,\n          \"z\": 2.5\n        },\n        {\n          \"x\": 2.5,\n          \"y\": 10,\n          \"z\": 2.5\n        },\n        {\n          \"x\": 2.5,\n          \"y\": 12.5,\n          \"z\": 2.2\n        }\n      ]\n    },\n    {\n      \"roomId\": \"245409c0-e1e5-4f2e-b875-7c91dbafe837\",\n      \"points\": [\n        {\n          \"x\": 7.5,\n          \"y\": 9,\n          \"z\": 2.5\n        },\n        {\n          \"x\": 7.5,\n          \"y\": 10,\n          \"z\": 2.5\n        },\n        {\n          \"x\": 7.5,\n          \"y\": 12.5,\n          \"z\": 2.2\n        }\n      ]\n    },\n    {\n      \"roomId\": \"89d2681c-1be0-43e9-aaa6-ceb9840b3764\",\n      \"points\": [\n        {\n          \"x\": -2.5,\n          \"y\": 9,\n          \"z\": 2.5\n        },\n        {\n          \"x\": -2.5,\n          \"y\": 9.5,\n          \"z\": 2.2\n        }\n      ]\n    },\n    {\n      \"roomId\": \"8c309d06-2722-406e-abe0-f6c817e7ef25\",\n      \"points\": [\n        {\n          \"x\": 11.5,\n          \"y\": 9,\n          \"z\": 2.5\n        },\n        {\n          \"x\": 11.5,\n          \"y\": 12.5,\n          \"z\": 2.2\n        }\n      ]\n    }\n  ]\n}"
+						}
+					],
+					"role": "assistant"
+				}
+			],
+			"parallel_tool_calls": true,
+			"previous_response_id": null,
+			"prompt_cache_key": null,
+			"reasoning": {
+				"effort": "medium",
+				"summary": null
+			},
+			"safety_identifier": null,
+			"service_tier": "default",
+			"store": true,
+			"temperature": 1,
+			"text": {
+				"format": {
+					"type": "json_schema",
+					"description": null,
+					"name": "response",
+					"schema": {
+						"type": "object",
+						"properties": {
+							"mainTrunk": {
+								"type": "object",
+								"properties": {
+									"points": {
+										"type": "array",
+										"items": {
+											"type": "object",
+											"properties": {
+												"x": {
+													"type": "number"
+												},
+												"y": {
+													"type": "number"
+												},
+												"z": {
+													"type": "number"
+												}
+											},
+											"required": ["x", "y", "z"],
+											"additionalProperties": false
+										},
+										"minItems": 2,
+										"description": "Ordered coordinate points defining the main trunk polyline path"
+									}
+								},
+								"required": ["points"],
+								"additionalProperties": false
+							},
+							"branches": {
+								"type": "array",
+								"items": {
+									"type": "object",
+									"properties": {
+										"roomId": {
+											"type": "string",
+											"description": "The ID of the room this branch serves"
+										},
+										"points": {
+											"type": "array",
+											"items": {
+												"type": "object",
+												"properties": {
+													"x": {
+														"type": "number"
+													},
+													"y": {
+														"type": "number"
+													},
+													"z": {
+														"type": "number"
+													}
+												},
+												"required": ["x", "y", "z"],
+												"additionalProperties": false
+											},
+											"minItems": 2,
+											"description": "Ordered coordinate points defining the branch polyline path"
+										}
+									},
+									"required": ["roomId", "points"],
+									"additionalProperties": false
+								},
+								"minItems": 1,
+								"description": "Array of branch connections, one for each room"
+							}
+						},
+						"required": ["mainTrunk", "branches"],
+						"additionalProperties": false
+					},
+					"strict": false
+				},
+				"verbosity": "medium"
+			},
+			"tool_choice": "auto",
+			"tools": [],
+			"top_logprobs": 0,
+			"top_p": 1,
+			"truncation": "disabled",
+			"usage": {
+				"input_tokens": 7778,
+				"input_tokens_details": {
+					"cached_tokens": 0
+				},
+				"output_tokens": 4630,
+				"output_tokens_details": {
+					"reasoning_tokens": 3648
+				},
+				"total_tokens": 12408
+			},
+			"user": null,
+			"metadata": {}
+		}
+	},
+	"request": {
+		"body": {
+			"model": "gpt-5-mini",
+			"input": [
+				{
+					"role": "developer",
+					"content": "\nAir Supply Routing Generator\nYou are an AI system specialized in mechanical plumbing and HVAC systems. Your task is to design the air supply routing for a given building floor plan.\n\nInput:\nA set of room geometries provided as closed polylines in 3D space (each polyline represents a room boundary).\nEach room has a unique identifier (e.g., A, B, C, …).\n\nOutput:\nA structured duct routing system consisting of:\n1. Main Trunk Line: Primary supply route connecting all rooms\n2. Branch Connections: Individual supply lines connecting each room to the main trunk\n\nRules for Routing\n\nMain Trunk Line:\n- The primary supply route should run along a logical central corridor or perimeter path that efficiently connects all rooms\n- The trunk line must form a continuous path with minimal bends\n- The routing should provide optimal access to all rooms for branch connections\n- Use a single continuous polyline with ordered coordinate points\n\nBranch Connections:\n- Each room must connect to the main trunk line through exactly one branch line\n- Each branch should be a separate polyline connecting the main trunk to the room\n- The branch should enter the room at a reasonable supply location (preferably near the room centroid or specified inlet point)\n- Each branch must clearly identify which room it serves by room ID\n\nCoordinate System:\n- Use the same coordinate system as the input polylines\n- Ensure all routing points align with walls, corridors, or clear paths where ducts could be installed\n- All coordinates should be in 3D space (x, y, z)\n\nOptimization Goals:\n- Minimize total duct length\n- Avoid unnecessary crossings\n- Maintain serviceability and logical layout\n- Ensure proper clearance and accessibility\n\nInstallation Requirements:\n- The ducts should be routed with an offset of 0.5 meters from the outer edge of the rooms\n- Maintain consistent elevation (z-coordinate) for the main trunk line\n- Branch connections may vary in elevation to reach room supply points\n"
+				},
+				{
+					"role": "user",
+					"content": [
+						{
+							"type": "input_text",
+							"text": "{\"name\":\"test level\",\"rooms\":[{\"id\":\"9e3dcb45-2553-4d04-8aa2-cf7edfa3aba7\",\"name\":\"Living Room\",\"area\":80,\"height\":3,\"geometry\":{\"points\":[{\"x\":0,\"y\":0,\"z\":0},{\"x\":10,\"y\":0,\"z\":0},{\"x\":10,\"y\":8,\"z\":0},{\"x\":0,\"y\":8,\"z\":0},{\"x\":0,\"y\":0,\"z\":0}]}},{\"id\":\"09c5d567-ef68-494d-b5dc-9ff79edb1881\",\"name\":\"Living Room\",\"area\":80,\"height\":3,\"geometry\":{\"points\":[{\"x\":0,\"y\":0,\"z\":0},{\"x\":10,\"y\":0,\"z\":0},{\"x\":10,\"y\":8,\"z\":0},{\"x\":0,\"y\":8,\"z\":0},{\"x\":0,\"y\":0,\"z\":0}]}},{\"id\":\"c0b94e49-ab8f-4751-9519-10fc7c3cf106\",\"name\":\"Living Room\",\"area\":80,\"height\":3,\"geometry\":{\"points\":[{\"x\":0,\"y\":0,\"z\":0},{\"x\":10,\"y\":0,\"z\":0},{\"x\":10,\"y\":8,\"z\":0},{\"x\":0,\"y\":8,\"z\":0},{\"x\":0,\"y\":0,\"z\":0}]}},{\"id\":\"2e83d153-1b16-4d47-8020-812854ac8b9c\",\"name\":\"Living Room\",\"area\":80,\"height\":3,\"geometry\":{\"points\":[{\"x\":0,\"y\":0,\"z\":0},{\"x\":10,\"y\":0,\"z\":0},{\"x\":10,\"y\":8,\"z\":0},{\"x\":0,\"y\":8,\"z\":0},{\"x\":0,\"y\":0,\"z\":0}]}},{\"id\":\"245409c0-e1e5-4f2e-b875-7c91dbafe837\",\"name\":\"Living Room\",\"area\":80,\"height\":3,\"geometry\":{\"points\":[{\"x\":0,\"y\":0,\"z\":0},{\"x\":10,\"y\":0,\"z\":0},{\"x\":10,\"y\":8,\"z\":0},{\"x\":0,\"y\":8,\"z\":0},{\"x\":0,\"y\":0,\"z\":0}]}},{\"id\":\"89d2681c-1be0-43e9-aaa6-ceb9840b3764\",\"name\":\"Living Room\",\"area\":80,\"height\":3,\"geometry\":{\"points\":[{\"x\":0,\"y\":0,\"z\":0},{\"x\":10,\"y\":0,\"z\":0},{\"x\":10,\"y\":8,\"z\":0},{\"x\":0,\"y\":8,\"z\":0},{\"x\":0,\"y\":0,\"z\":0}]}},{\"id\":\"8c309d06-2722-406e-abe0-f6c817e7ef25\",\"name\":\"Living Room\",\"area\":80,\"height\":3,\"geometry\":{\"points\":[{\"x\":0,\"y\":0,\"z\":0},{\"x\":10,\"y\":0,\"z\":0},{\"x\":10,\"y\":8,\"z\":0},{\"x\":0,\"y\":8,\"z\":0},{\"x\":0,\"y\":0,\"z\":0}]}},{\"id\":\"644d6aa6-8138-4330-9822-a22e04759ef6\",\"name\":\"Living Room\",\"area\":80,\"height\":3,\"geometry\":{\"points\":[{\"x\":0,\"y\":0,\"z\":0},{\"x\":10,\"y\":0,\"z\":0},{\"x\":10,\"y\":8,\"z\":0},{\"x\":0,\"y\":8,\"z\":0},{\"x\":0,\"y\":0,\"z\":0}]}},{\"id\":\"9e3dcb45-2553-4d04-8aa2-cf7edfa3aba7\",\"name\":\"Corridor\",\"area\":30,\"height\":3,\"geometry\":{\"points\":[{\"x\":0,\"y\":8,\"z\":0},{\"x\":15,\"y\":8,\"z\":0},{\"x\":15,\"y\":10,\"z\":0},{\"x\":0,\"y\":10,\"z\":0},{\"x\":0,\"y\":8,\"z\":0}]}},{\"id\":\"09c5d567-ef68-494d-b5dc-9ff79edb1881\",\"name\":\"Corridor\",\"area\":30,\"height\":3,\"geometry\":{\"points\":[{\"x\":0,\"y\":8,\"z\":0},{\"x\":15,\"y\":8,\"z\":0},{\"x\":15,\"y\":10,\"z\":0},{\"x\":0,\"y\":10,\"z\":0},{\"x\":0,\"y\":8,\"z\":0}]}},{\"id\":\"c0b94e49-ab8f-4751-9519-10fc7c3cf106\",\"name\":\"Corridor\",\"area\":30,\"height\":3,\"geometry\":{\"points\":[{\"x\":0,\"y\":8,\"z\":0},{\"x\":15,\"y\":8,\"z\":0},{\"x\":15,\"y\":10,\"z\":0},{\"x\":0,\"y\":10,\"z\":0},{\"x\":0,\"y\":8,\"z\":0}]}},{\"id\":\"2e83d153-1b16-4d47-8020-812854ac8b9c\",\"name\":\"Corridor\",\"area\":30,\"height\":3,\"geometry\":{\"points\":[{\"x\":0,\"y\":8,\"z\":0},{\"x\":15,\"y\":8,\"z\":0},{\"x\":15,\"y\":10,\"z\":0},{\"x\":0,\"y\":10,\"z\":0},{\"x\":0,\"y\":8,\"z\":0}]}},{\"id\":\"245409c0-e1e5-4f2e-b875-7c91dbafe837\",\"name\":\"Corridor\",\"area\":30,\"height\":3,\"geometry\":{\"points\":[{\"x\":0,\"y\":8,\"z\":0},{\"x\":15,\"y\":8,\"z\":0},{\"x\":15,\"y\":10,\"z\":0},{\"x\":0,\"y\":10,\"z\":0},{\"x\":0,\"y\":8,\"z\":0}]}},{\"id\":\"89d2681c-1be0-43e9-aaa6-ceb9840b3764\",\"name\":\"Corridor\",\"area\":30,\"height\":3,\"geometry\":{\"points\":[{\"x\":0,\"y\":8,\"z\":0},{\"x\":15,\"y\":8,\"z\":0},{\"x\":15,\"y\":10,\"z\":0},{\"x\":0,\"y\":10,\"z\":0},{\"x\":0,\"y\":8,\"z\":0}]}},{\"id\":\"8c309d06-2722-406e-abe0-f6c817e7ef25\",\"name\":\"Corridor\",\"area\":30,\"height\":3,\"geometry\":{\"points\":[{\"x\":0,\"y\":8,\"z\":0},{\"x\":15,\"y\":8,\"z\":0},{\"x\":15,\"y\":10,\"z\":0},{\"x\":0,\"y\":10,\"z\":0},{\"x\":0,\"y\":8,\"z\":0}]}},{\"id\":\"644d6aa6-8138-4330-9822-a22e04759ef6\",\"name\":\"Corridor\",\"area\":30,\"height\":3,\"geometry\":{\"points\":[{\"x\":0,\"y\":8,\"z\":0},{\"x\":15,\"y\":8,\"z\":0},{\"x\":15,\"y\":10,\"z\":0},{\"x\":0,\"y\":10,\"z\":0},{\"x\":0,\"y\":8,\"z\":0}]}},{\"id\":\"9e3dcb45-2553-4d04-8aa2-cf7edfa3aba7\",\"name\":\"Office 1\",\"area\":25,\"height\":3,\"geometry\":{\"points\":[{\"x\":0,\"y\":10,\"z\":0},{\"x\":5,\"y\":10,\"z\":0},{\"x\":5,\"y\":15,\"z\":0},{\"x\":0,\"y\":15,\"z\":0},{\"x\":0,\"y\":10,\"z\":0}]}},{\"id\":\"09c5d567-ef68-494d-b5dc-9ff79edb1881\",\"name\":\"Office 1\",\"area\":25,\"height\":3,\"geometry\":{\"points\":[{\"x\":0,\"y\":10,\"z\":0},{\"x\":5,\"y\":10,\"z\":0},{\"x\":5,\"y\":15,\"z\":0},{\"x\":0,\"y\":15,\"z\":0},{\"x\":0,\"y\":10,\"z\":0}]}},{\"id\":\"c0b94e49-ab8f-4751-9519-10fc7c3cf106\",\"name\":\"Office 1\",\"area\":25,\"height\":3,\"geometry\":{\"points\":[{\"x\":0,\"y\":10,\"z\":0},{\"x\":5,\"y\":10,\"z\":0},{\"x\":5,\"y\":15,\"z\":0},{\"x\":0,\"y\":15,\"z\":0},{\"x\":0,\"y\":10,\"z\":0}]}},{\"id\":\"2e83d153-1b16-4d47-8020-812854ac8b9c\",\"name\":\"Office 1\",\"area\":25,\"height\":3,\"geometry\":{\"points\":[{\"x\":0,\"y\":10,\"z\":0},{\"x\":5,\"y\":10,\"z\":0},{\"x\":5,\"y\":15,\"z\":0},{\"x\":0,\"y\":15,\"z\":0},{\"x\":0,\"y\":10,\"z\":0}]}},{\"id\":\"245409c0-e1e5-4f2e-b875-7c91dbafe837\",\"name\":\"Office 1\",\"area\":25,\"height\":3,\"geometry\":{\"points\":[{\"x\":0,\"y\":10,\"z\":0},{\"x\":5,\"y\":10,\"z\":0},{\"x\":5,\"y\":15,\"z\":0},{\"x\":0,\"y\":15,\"z\":0},{\"x\":0,\"y\":10,\"z\":0}]}},{\"id\":\"89d2681c-1be0-43e9-aaa6-ceb9840b3764\",\"name\":\"Office 1\",\"area\":25,\"height\":3,\"geometry\":{\"points\":[{\"x\":0,\"y\":10,\"z\":0},{\"x\":5,\"y\":10,\"z\":0},{\"x\":5,\"y\":15,\"z\":0},{\"x\":0,\"y\":15,\"z\":0},{\"x\":0,\"y\":10,\"z\":0}]}},{\"id\":\"8c309d06-2722-406e-abe0-f6c817e7ef25\",\"name\":\"Office 1\",\"area\":25,\"height\":3,\"geometry\":{\"points\":[{\"x\":0,\"y\":10,\"z\":0},{\"x\":5,\"y\":10,\"z\":0},{\"x\":5,\"y\":15,\"z\":0},{\"x\":0,\"y\":15,\"z\":0},{\"x\":0,\"y\":10,\"z\":0}]}},{\"id\":\"644d6aa6-8138-4330-9822-a22e04759ef6\",\"name\":\"Office 1\",\"area\":25,\"height\":3,\"geometry\":{\"points\":[{\"x\":0,\"y\":10,\"z\":0},{\"x\":5,\"y\":10,\"z\":0},{\"x\":5,\"y\":15,\"z\":0},{\"x\":0,\"y\":15,\"z\":0},{\"x\":0,\"y\":10,\"z\":0}]}},{\"id\":\"9e3dcb45-2553-4d04-8aa2-cf7edfa3aba7\",\"name\":\"Office 2\",\"area\":25,\"height\":3,\"geometry\":{\"points\":[{\"x\":5,\"y\":10,\"z\":0},{\"x\":10,\"y\":10,\"z\":0},{\"x\":10,\"y\":15,\"z\":0},{\"x\":5,\"y\":15,\"z\":0},{\"x\":5,\"y\":10,\"z\":0}]}},{\"id\":\"09c5d567-ef68-494d-b5dc-9ff79edb1881\",\"name\":\"Office 2\",\"area\":25,\"height\":3,\"geometry\":{\"points\":[{\"x\":5,\"y\":10,\"z\":0},{\"x\":10,\"y\":10,\"z\":0},{\"x\":10,\"y\":15,\"z\":0},{\"x\":5,\"y\":15,\"z\":0},{\"x\":5,\"y\":10,\"z\":0}]}},{\"id\":\"c0b94e49-ab8f-4751-9519-10fc7c3cf106\",\"name\":\"Office 2\",\"area\":25,\"height\":3,\"geometry\":{\"points\":[{\"x\":5,\"y\":10,\"z\":0},{\"x\":10,\"y\":10,\"z\":0},{\"x\":10,\"y\":15,\"z\":0},{\"x\":5,\"y\":15,\"z\":0},{\"x\":5,\"y\":10,\"z\":0}]}},{\"id\":\"2e83d153-1b16-4d47-8020-812854ac8b9c\",\"name\":\"Office 2\",\"area\":25,\"height\":3,\"geometry\":{\"points\":[{\"x\":5,\"y\":10,\"z\":0},{\"x\":10,\"y\":10,\"z\":0},{\"x\":10,\"y\":15,\"z\":0},{\"x\":5,\"y\":15,\"z\":0},{\"x\":5,\"y\":10,\"z\":0}]}},{\"id\":\"245409c0-e1e5-4f2e-b875-7c91dbafe837\",\"name\":\"Office 2\",\"area\":25,\"height\":3,\"geometry\":{\"points\":[{\"x\":5,\"y\":10,\"z\":0},{\"x\":10,\"y\":10,\"z\":0},{\"x\":10,\"y\":15,\"z\":0},{\"x\":5,\"y\":15,\"z\":0},{\"x\":5,\"y\":10,\"z\":0}]}},{\"id\":\"89d2681c-1be0-43e9-aaa6-ceb9840b3764\",\"name\":\"Office 2\",\"area\":25,\"height\":3,\"geometry\":{\"points\":[{\"x\":5,\"y\":10,\"z\":0},{\"x\":10,\"y\":10,\"z\":0},{\"x\":10,\"y\":15,\"z\":0},{\"x\":5,\"y\":15,\"z\":0},{\"x\":5,\"y\":10,\"z\":0}]}},{\"id\":\"8c309d06-2722-406e-abe0-f6c817e7ef25\",\"name\":\"Office 2\",\"area\":25,\"height\":3,\"geometry\":{\"points\":[{\"x\":5,\"y\":10,\"z\":0},{\"x\":10,\"y\":10,\"z\":0},{\"x\":10,\"y\":15,\"z\":0},{\"x\":5,\"y\":15,\"z\":0},{\"x\":5,\"y\":10,\"z\":0}]}},{\"id\":\"644d6aa6-8138-4330-9822-a22e04759ef6\",\"name\":\"Office 2\",\"area\":25,\"height\":3,\"geometry\":{\"points\":[{\"x\":5,\"y\":10,\"z\":0},{\"x\":10,\"y\":10,\"z\":0},{\"x\":10,\"y\":15,\"z\":0},{\"x\":5,\"y\":15,\"z\":0},{\"x\":5,\"y\":10,\"z\":0}]}},{\"id\":\"9e3dcb45-2553-4d04-8aa2-cf7edfa3aba7\",\"name\":\"Mechanical Shaft\",\"area\":15,\"height\":3,\"geometry\":{\"points\":[{\"x\":10,\"y\":10,\"z\":0},{\"x\":13,\"y\":10,\"z\":0},{\"x\":13,\"y\":15,\"z\":0},{\"x\":10,\"y\":15,\"z\":0},{\"x\":10,\"y\":10,\"z\":0}]}},{\"id\":\"09c5d567-ef68-494d-b5dc-9ff79edb1881\",\"name\":\"Mechanical Shaft\",\"area\":15,\"height\":3,\"geometry\":{\"points\":[{\"x\":10,\"y\":10,\"z\":0},{\"x\":13,\"y\":10,\"z\":0},{\"x\":13,\"y\":15,\"z\":0},{\"x\":10,\"y\":15,\"z\":0},{\"x\":10,\"y\":10,\"z\":0}]}},{\"id\":\"c0b94e49-ab8f-4751-9519-10fc7c3cf106\",\"name\":\"Mechanical Shaft\",\"area\":15,\"height\":3,\"geometry\":{\"points\":[{\"x\":10,\"y\":10,\"z\":0},{\"x\":13,\"y\":10,\"z\":0},{\"x\":13,\"y\":15,\"z\":0},{\"x\":10,\"y\":15,\"z\":0},{\"x\":10,\"y\":10,\"z\":0}]}},{\"id\":\"2e83d153-1b16-4d47-8020-812854ac8b9c\",\"name\":\"Mechanical Shaft\",\"area\":15,\"height\":3,\"geometry\":{\"points\":[{\"x\":10,\"y\":10,\"z\":0},{\"x\":13,\"y\":10,\"z\":0},{\"x\":13,\"y\":15,\"z\":0},{\"x\":10,\"y\":15,\"z\":0},{\"x\":10,\"y\":10,\"z\":0}]}},{\"id\":\"245409c0-e1e5-4f2e-b875-7c91dbafe837\",\"name\":\"Mechanical Shaft\",\"area\":15,\"height\":3,\"geometry\":{\"points\":[{\"x\":10,\"y\":10,\"z\":0},{\"x\":13,\"y\":10,\"z\":0},{\"x\":13,\"y\":15,\"z\":0},{\"x\":10,\"y\":15,\"z\":0},{\"x\":10,\"y\":10,\"z\":0}]}},{\"id\":\"89d2681c-1be0-43e9-aaa6-ceb9840b3764\",\"name\":\"Mechanical Shaft\",\"area\":15,\"height\":3,\"geometry\":{\"points\":[{\"x\":10,\"y\":10,\"z\":0},{\"x\":13,\"y\":10,\"z\":0},{\"x\":13,\"y\":15,\"z\":0},{\"x\":10,\"y\":15,\"z\":0},{\"x\":10,\"y\":10,\"z\":0}]}},{\"id\":\"8c309d06-2722-406e-abe0-f6c817e7ef25\",\"name\":\"Mechanical Shaft\",\"area\":15,\"height\":3,\"geometry\":{\"points\":[{\"x\":10,\"y\":10,\"z\":0},{\"x\":13,\"y\":10,\"z\":0},{\"x\":13,\"y\":15,\"z\":0},{\"x\":10,\"y\":15,\"z\":0},{\"x\":10,\"y\":10,\"z\":0}]}},{\"id\":\"644d6aa6-8138-4330-9822-a22e04759ef6\",\"name\":\"Mechanical Shaft\",\"area\":15,\"height\":3,\"geometry\":{\"points\":[{\"x\":10,\"y\":10,\"z\":0},{\"x\":13,\"y\":10,\"z\":0},{\"x\":13,\"y\":15,\"z\":0},{\"x\":10,\"y\":15,\"z\":0},{\"x\":10,\"y\":10,\"z\":0}]}},{\"id\":\"9e3dcb45-2553-4d04-8aa2-cf7edfa3aba7\",\"name\":\"Bedroom\",\"area\":24,\"height\":3,\"geometry\":{\"points\":[{\"x\":10,\"y\":0,\"z\":0},{\"x\":13,\"y\":0,\"z\":0},{\"x\":13,\"y\":8,\"z\":0},{\"x\":10,\"y\":8,\"z\":0},{\"x\":10,\"y\":0,\"z\":0}]}},{\"id\":\"09c5d567-ef68-494d-b5dc-9ff79edb1881\",\"name\":\"Bedroom\",\"area\":24,\"height\":3,\"geometry\":{\"points\":[{\"x\":10,\"y\":0,\"z\":0},{\"x\":13,\"y\":0,\"z\":0},{\"x\":13,\"y\":8,\"z\":0},{\"x\":10,\"y\":8,\"z\":0},{\"x\":10,\"y\":0,\"z\":0}]}},{\"id\":\"c0b94e49-ab8f-4751-9519-10fc7c3cf106\",\"name\":\"Bedroom\",\"area\":24,\"height\":3,\"geometry\":{\"points\":[{\"x\":10,\"y\":0,\"z\":0},{\"x\":13,\"y\":0,\"z\":0},{\"x\":13,\"y\":8,\"z\":0},{\"x\":10,\"y\":8,\"z\":0},{\"x\":10,\"y\":0,\"z\":0}]}},{\"id\":\"2e83d153-1b16-4d47-8020-812854ac8b9c\",\"name\":\"Bedroom\",\"area\":24,\"height\":3,\"geometry\":{\"points\":[{\"x\":10,\"y\":0,\"z\":0},{\"x\":13,\"y\":0,\"z\":0},{\"x\":13,\"y\":8,\"z\":0},{\"x\":10,\"y\":8,\"z\":0},{\"x\":10,\"y\":0,\"z\":0}]}},{\"id\":\"245409c0-e1e5-4f2e-b875-7c91dbafe837\",\"name\":\"Bedroom\",\"area\":24,\"height\":3,\"geometry\":{\"points\":[{\"x\":10,\"y\":0,\"z\":0},{\"x\":13,\"y\":0,\"z\":0},{\"x\":13,\"y\":8,\"z\":0},{\"x\":10,\"y\":8,\"z\":0},{\"x\":10,\"y\":0,\"z\":0}]}},{\"id\":\"89d2681c-1be0-43e9-aaa6-ceb9840b3764\",\"name\":\"Bedroom\",\"area\":24,\"height\":3,\"geometry\":{\"points\":[{\"x\":10,\"y\":0,\"z\":0},{\"x\":13,\"y\":0,\"z\":0},{\"x\":13,\"y\":8,\"z\":0},{\"x\":10,\"y\":8,\"z\":0},{\"x\":10,\"y\":0,\"z\":0}]}},{\"id\":\"8c309d06-2722-406e-abe0-f6c817e7ef25\",\"name\":\"Bedroom\",\"area\":24,\"height\":3,\"geometry\":{\"points\":[{\"x\":10,\"y\":0,\"z\":0},{\"x\":13,\"y\":0,\"z\":0},{\"x\":13,\"y\":8,\"z\":0},{\"x\":10,\"y\":8,\"z\":0},{\"x\":10,\"y\":0,\"z\":0}]}},{\"id\":\"644d6aa6-8138-4330-9822-a22e04759ef6\",\"name\":\"Bedroom\",\"area\":24,\"height\":3,\"geometry\":{\"points\":[{\"x\":10,\"y\":0,\"z\":0},{\"x\":13,\"y\":0,\"z\":0},{\"x\":13,\"y\":8,\"z\":0},{\"x\":10,\"y\":8,\"z\":0},{\"x\":10,\"y\":0,\"z\":0}]}},{\"id\":\"9e3dcb45-2553-4d04-8aa2-cf7edfa3aba7\",\"name\":\"Conference Room\",\"area\":101,\"height\":3,\"geometry\":{\"points\":[{\"x\":13,\"y\":0,\"z\":0},{\"x\":20,\"y\":0,\"z\":0},{\"x\":20,\"y\":15,\"z\":0},{\"x\":13,\"y\":15,\"z\":0},{\"x\":13,\"y\":10,\"z\":0},{\"x\":15,\"y\":10,\"z\":0},{\"x\":15,\"y\":8,\"z\":0},{\"x\":13,\"y\":8,\"z\":0},{\"x\":13,\"y\":0,\"z\":0}]}},{\"id\":\"09c5d567-ef68-494d-b5dc-9ff79edb1881\",\"name\":\"Conference Room\",\"area\":101,\"height\":3,\"geometry\":{\"points\":[{\"x\":13,\"y\":0,\"z\":0},{\"x\":20,\"y\":0,\"z\":0},{\"x\":20,\"y\":15,\"z\":0},{\"x\":13,\"y\":15,\"z\":0},{\"x\":13,\"y\":10,\"z\":0},{\"x\":15,\"y\":10,\"z\":0},{\"x\":15,\"y\":8,\"z\":0},{\"x\":13,\"y\":8,\"z\":0},{\"x\":13,\"y\":0,\"z\":0}]}},{\"id\":\"c0b94e49-ab8f-4751-9519-10fc7c3cf106\",\"name\":\"Conference Room\",\"area\":101,\"height\":3,\"geometry\":{\"points\":[{\"x\":13,\"y\":0,\"z\":0},{\"x\":20,\"y\":0,\"z\":0},{\"x\":20,\"y\":15,\"z\":0},{\"x\":13,\"y\":15,\"z\":0},{\"x\":13,\"y\":10,\"z\":0},{\"x\":15,\"y\":10,\"z\":0},{\"x\":15,\"y\":8,\"z\":0},{\"x\":13,\"y\":8,\"z\":0},{\"x\":13,\"y\":0,\"z\":0}]}},{\"id\":\"2e83d153-1b16-4d47-8020-812854ac8b9c\",\"name\":\"Conference Room\",\"area\":101,\"height\":3,\"geometry\":{\"points\":[{\"x\":13,\"y\":0,\"z\":0},{\"x\":20,\"y\":0,\"z\":0},{\"x\":20,\"y\":15,\"z\":0},{\"x\":13,\"y\":15,\"z\":0},{\"x\":13,\"y\":10,\"z\":0},{\"x\":15,\"y\":10,\"z\":0},{\"x\":15,\"y\":8,\"z\":0},{\"x\":13,\"y\":8,\"z\":0},{\"x\":13,\"y\":0,\"z\":0}]}},{\"id\":\"245409c0-e1e5-4f2e-b875-7c91dbafe837\",\"name\":\"Conference Room\",\"area\":101,\"height\":3,\"geometry\":{\"points\":[{\"x\":13,\"y\":0,\"z\":0},{\"x\":20,\"y\":0,\"z\":0},{\"x\":20,\"y\":15,\"z\":0},{\"x\":13,\"y\":15,\"z\":0},{\"x\":13,\"y\":10,\"z\":0},{\"x\":15,\"y\":10,\"z\":0},{\"x\":15,\"y\":8,\"z\":0},{\"x\":13,\"y\":8,\"z\":0},{\"x\":13,\"y\":0,\"z\":0}]}},{\"id\":\"89d2681c-1be0-43e9-aaa6-ceb9840b3764\",\"name\":\"Conference Room\",\"area\":101,\"height\":3,\"geometry\":{\"points\":[{\"x\":13,\"y\":0,\"z\":0},{\"x\":20,\"y\":0,\"z\":0},{\"x\":20,\"y\":15,\"z\":0},{\"x\":13,\"y\":15,\"z\":0},{\"x\":13,\"y\":10,\"z\":0},{\"x\":15,\"y\":10,\"z\":0},{\"x\":15,\"y\":8,\"z\":0},{\"x\":13,\"y\":8,\"z\":0},{\"x\":13,\"y\":0,\"z\":0}]}},{\"id\":\"8c309d06-2722-406e-abe0-f6c817e7ef25\",\"name\":\"Conference Room\",\"area\":101,\"height\":3,\"geometry\":{\"points\":[{\"x\":13,\"y\":0,\"z\":0},{\"x\":20,\"y\":0,\"z\":0},{\"x\":20,\"y\":15,\"z\":0},{\"x\":13,\"y\":15,\"z\":0},{\"x\":13,\"y\":10,\"z\":0},{\"x\":15,\"y\":10,\"z\":0},{\"x\":15,\"y\":8,\"z\":0},{\"x\":13,\"y\":8,\"z\":0},{\"x\":13,\"y\":0,\"z\":0}]}},{\"id\":\"644d6aa6-8138-4330-9822-a22e04759ef6\",\"name\":\"Conference Room\",\"area\":101,\"height\":3,\"geometry\":{\"points\":[{\"x\":13,\"y\":0,\"z\":0},{\"x\":20,\"y\":0,\"z\":0},{\"x\":20,\"y\":15,\"z\":0},{\"x\":13,\"y\":15,\"z\":0},{\"x\":13,\"y\":10,\"z\":0},{\"x\":15,\"y\":10,\"z\":0},{\"x\":15,\"y\":8,\"z\":0},{\"x\":13,\"y\":8,\"z\":0},{\"x\":13,\"y\":0,\"z\":0}]}},{\"id\":\"9e3dcb45-2553-4d04-8aa2-cf7edfa3aba7\",\"name\":\"Office 3\",\"area\":55,\"height\":3,\"geometry\":{\"points\":[{\"x\":-5,\"y\":4,\"z\":0},{\"x\":0,\"y\":4,\"z\":0},{\"x\":0,\"y\":15,\"z\":0},{\"x\":-5,\"y\":15,\"z\":0},{\"x\":-5,\"y\":4,\"z\":0}]}},{\"id\":\"09c5d567-ef68-494d-b5dc-9ff79edb1881\",\"name\":\"Office 3\",\"area\":55,\"height\":3,\"geometry\":{\"points\":[{\"x\":-5,\"y\":4,\"z\":0},{\"x\":0,\"y\":4,\"z\":0},{\"x\":0,\"y\":15,\"z\":0},{\"x\":-5,\"y\":15,\"z\":0},{\"x\":-5,\"y\":4,\"z\":0}]}},{\"id\":\"c0b94e49-ab8f-4751-9519-10fc7c3cf106\",\"name\":\"Office 3\",\"area\":55,\"height\":3,\"geometry\":{\"points\":[{\"x\":-5,\"y\":4,\"z\":0},{\"x\":0,\"y\":4,\"z\":0},{\"x\":0,\"y\":15,\"z\":0},{\"x\":-5,\"y\":15,\"z\":0},{\"x\":-5,\"y\":4,\"z\":0}]}},{\"id\":\"2e83d153-1b16-4d47-8020-812854ac8b9c\",\"name\":\"Office 3\",\"area\":55,\"height\":3,\"geometry\":{\"points\":[{\"x\":-5,\"y\":4,\"z\":0},{\"x\":0,\"y\":4,\"z\":0},{\"x\":0,\"y\":15,\"z\":0},{\"x\":-5,\"y\":15,\"z\":0},{\"x\":-5,\"y\":4,\"z\":0}]}},{\"id\":\"245409c0-e1e5-4f2e-b875-7c91dbafe837\",\"name\":\"Office 3\",\"area\":55,\"height\":3,\"geometry\":{\"points\":[{\"x\":-5,\"y\":4,\"z\":0},{\"x\":0,\"y\":4,\"z\":0},{\"x\":0,\"y\":15,\"z\":0},{\"x\":-5,\"y\":15,\"z\":0},{\"x\":-5,\"y\":4,\"z\":0}]}},{\"id\":\"89d2681c-1be0-43e9-aaa6-ceb9840b3764\",\"name\":\"Office 3\",\"area\":55,\"height\":3,\"geometry\":{\"points\":[{\"x\":-5,\"y\":4,\"z\":0},{\"x\":0,\"y\":4,\"z\":0},{\"x\":0,\"y\":15,\"z\":0},{\"x\":-5,\"y\":15,\"z\":0},{\"x\":-5,\"y\":4,\"z\":0}]}},{\"id\":\"8c309d06-2722-406e-abe0-f6c817e7ef25\",\"name\":\"Office 3\",\"area\":55,\"height\":3,\"geometry\":{\"points\":[{\"x\":-5,\"y\":4,\"z\":0},{\"x\":0,\"y\":4,\"z\":0},{\"x\":0,\"y\":15,\"z\":0},{\"x\":-5,\"y\":15,\"z\":0},{\"x\":-5,\"y\":4,\"z\":0}]}},{\"id\":\"644d6aa6-8138-4330-9822-a22e04759ef6\",\"name\":\"Office 3\",\"area\":55,\"height\":3,\"geometry\":{\"points\":[{\"x\":-5,\"y\":4,\"z\":0},{\"x\":0,\"y\":4,\"z\":0},{\"x\":0,\"y\":15,\"z\":0},{\"x\":-5,\"y\":15,\"z\":0},{\"x\":-5,\"y\":4,\"z\":0}]}}]}"
+						}
+					]
+				}
+			],
+			"text": {
+				"format": {
+					"type": "json_schema",
+					"strict": false,
+					"name": "response",
+					"schema": {
+						"type": "object",
+						"properties": {
+							"mainTrunk": {
+								"type": "object",
+								"properties": {
+									"points": {
+										"type": "array",
+										"items": {
+											"type": "object",
+											"properties": {
+												"x": {
+													"type": "number"
+												},
+												"y": {
+													"type": "number"
+												},
+												"z": {
+													"type": "number"
+												}
+											},
+											"required": ["x", "y", "z"],
+											"additionalProperties": false
+										},
+										"minItems": 2,
+										"description": "Ordered coordinate points defining the main trunk polyline path"
+									}
+								},
+								"required": ["points"],
+								"additionalProperties": false
+							},
+							"branches": {
+								"type": "array",
+								"items": {
+									"type": "object",
+									"properties": {
+										"roomId": {
+											"type": "string",
+											"description": "The ID of the room this branch serves"
+										},
+										"points": {
+											"type": "array",
+											"items": {
+												"type": "object",
+												"properties": {
+													"x": {
+														"type": "number"
+													},
+													"y": {
+														"type": "number"
+													},
+													"z": {
+														"type": "number"
+													}
+												},
+												"required": ["x", "y", "z"],
+												"additionalProperties": false
+											},
+											"minItems": 2,
+											"description": "Ordered coordinate points defining the branch polyline path"
+										}
+									},
+									"required": ["roomId", "points"],
+									"additionalProperties": false
+								},
+								"minItems": 1,
+								"description": "Array of branch connections, one for each room"
+							}
+						},
+						"required": ["mainTrunk", "branches"],
+						"additionalProperties": false,
+						"$schema": "http://json-schema.org/draft-07/schema#"
+					}
+				}
+			}
+		}
+	},
+	"reasoning": ""
+}

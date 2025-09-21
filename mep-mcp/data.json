@@ -1,0 +1,192 @@
+{
+	"levels": [
+		{
+			"name": "Small Floor (95 sqft)",
+			"rooms": [
+				{
+					"id": "S-101",
+					"name": "Closet",
+					"area": 60,
+					"height": 9,
+					"geometry": {
+						"points": [
+							{ "x": 0, "y": 0, "z": 0 },
+							{ "x": 12, "y": 0, "z": 0 },
+							{ "x": 12, "y": 5, "z": 0 },
+							{ "x": 0, "y": 5, "z": 0 }
+						]
+					}
+				},
+				{
+					"id": "S-102",
+					"name": "Hall",
+					"area": 35,
+					"height": 9,
+					"geometry": {
+						"points": [
+							{ "x": 0, "y": 0, "z": 0 },
+							{ "x": 7, "y": 0, "z": 0 },
+							{ "x": 7, "y": 5, "z": 0 },
+							{ "x": 0, "y": 5, "z": 0 }
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Medium Floor (350 sqft)",
+			"rooms": [
+				{
+					"id": "M-201",
+					"name": "Office A",
+					"area": 120,
+					"height": 10,
+					"geometry": {
+						"points": [
+							{ "x": 0, "y": 0, "z": 0 },
+							{ "x": 15, "y": 0, "z": 0 },
+							{ "x": 15, "y": 8, "z": 0 },
+							{ "x": 0, "y": 8, "z": 0 }
+						]
+					}
+				},
+				{
+					"id": "M-202",
+					"name": "Office B",
+					"area": 150,
+					"height": 10,
+					"geometry": {
+						"points": [
+							{ "x": 0, "y": 0, "z": 0 },
+							{ "x": 15, "y": 0, "z": 0 },
+							{ "x": 15, "y": 10, "z": 0 },
+							{ "x": 0, "y": 10, "z": 0 }
+						]
+					}
+				},
+				{
+					"id": "M-203",
+					"name": "Pantry",
+					"area": 80,
+					"height": 9,
+					"geometry": {
+						"points": [
+							{ "x": 0, "y": 0, "z": 0 },
+							{ "x": 10, "y": 0, "z": 0 },
+							{ "x": 10, "y": 8, "z": 0 },
+							{ "x": 0, "y": 8, "z": 0 }
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Large Floor (1250 sqft)",
+			"rooms": [
+				{
+					"id": "L-301",
+					"name": "Open Office",
+					"area": 400,
+					"height": 12,
+					"geometry": {
+						"points": [
+							{ "x": 0, "y": 0, "z": 0 },
+							{ "x": 25, "y": 0, "z": 0 },
+							{ "x": 25, "y": 16, "z": 0 },
+							{ "x": 0, "y": 16, "z": 0 }
+						]
+					}
+				},
+				{
+					"id": "L-302",
+					"name": "Conference",
+					"area": 350,
+					"height": 12,
+					"geometry": {
+						"points": [
+							{ "x": 0, "y": 0, "z": 0 },
+							{ "x": 25, "y": 0, "z": 0 },
+							{ "x": 25, "y": 14, "z": 0 },
+							{ "x": 0, "y": 14, "z": 0 }
+						]
+					}
+				},
+				{
+					"id": "L-303",
+					"name": "Corridor",
+					"area": 300,
+					"height": 10,
+					"geometry": {
+						"points": [
+							{ "x": 0, "y": 0, "z": 0 },
+							{ "x": 30, "y": 0, "z": 0 },
+							{ "x": 30, "y": 10, "z": 0 },
+							{ "x": 0, "y": 10, "z": 0 }
+						]
+					}
+				},
+				{
+					"id": "L-304",
+					"name": "Storage",
+					"area": 200,
+					"height": 10,
+					"geometry": {
+						"points": [
+							{ "x": 0, "y": 0, "z": 0 },
+							{ "x": 20, "y": 0, "z": 0 },
+							{ "x": 20, "y": 10, "z": 0 },
+							{ "x": 0, "y": 10, "z": 0 }
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Too Large Floor (2300 sqft)",
+			"rooms": [
+				{
+					"id": "XL-401",
+					"name": "Warehouse A",
+					"area": 800,
+					"height": 18,
+					"geometry": {
+						"points": [
+							{ "x": 0, "y": 0, "z": 0 },
+							{ "x": 40, "y": 0, "z": 0 },
+							{ "x": 40, "y": 20, "z": 0 },
+							{ "x": 0, "y": 20, "z": 0 }
+						]
+					}
+				},
+				{
+					"id": "XL-402",
+					"name": "Warehouse B",
+					"area": 900,
+					"height": 18,
+					"geometry": {
+						"points": [
+							{ "x": 0, "y": 0, "z": 0 },
+							{ "x": 30, "y": 0, "z": 0 },
+							{ "x": 30, "y": 30, "z": 0 },
+							{ "x": 0, "y": 30, "z": 0 }
+						]
+					}
+				},
+				{
+					"id": "XL-403",
+					"name": "Loading Dock",
+					"area": 600,
+					"height": 20,
+					"geometry": {
+						"points": [
+							{ "x": 0, "y": 0, "z": 0 },
+							{ "x": 30, "y": 0, "z": 0 },
+							{ "x": 30, "y": 20, "z": 0 },
+							{ "x": 0, "y": 20, "z": 0 }
+						]
+					}
+				}
+			]
+		}
+	]
+}
