@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36429.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "throughline.plugin", "throughline.plugin\throughline.plugin.csproj", "{69F1FD80-E01D-4878-8B3F-32B4E8A5735C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RubberDuck", "RubberDuck\RubberDuck.csproj", "{09DCA33C-9403-4036-893D-7D3C8093B009}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{69F1FD80-E01D-4878-8B3F-32B4E8A5735C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{69F1FD80-E01D-4878-8B3F-32B4E8A5735C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{69F1FD80-E01D-4878-8B3F-32B4E8A5735C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{69F1FD80-E01D-4878-8B3F-32B4E8A5735C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09DCA33C-9403-4036-893D-7D3C8093B009}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09DCA33C-9403-4036-893D-7D3C8093B009}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09DCA33C-9403-4036-893D-7D3C8093B009}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09DCA33C-9403-4036-893D-7D3C8093B009}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -7,10 +7,8 @@
         Rhino 8 Windows: net48, net7.0, net7.0-windows, net7.0-windows10.0.22000.0, etc
         Rhino 8 Mac: net7.0, net7.0-macos, net7.0-macos12.0, etc
     -->
-    <TargetFrameworks>net8.0</TargetFrameworks>
+    <TargetFrameworks>net7.0;net48</TargetFrameworks>
     <EnableDynamicLoading>true</EnableDynamicLoading>
-	<Nullable>enable</Nullable>
-	<ImplicitUsings>enable</ImplicitUsings>
     <TargetExt>.rhp</TargetExt>
     <NoWarn>NU1701</NoWarn>
   </PropertyGroup>
@@ -18,15 +16,14 @@
   <PropertyGroup>
     <!-- Specifies information for Assembly and Yak -->
     <Version>1.0</Version>
-    <Title>throughline.plugin</Title>
-    <Company>throughline.plugin Authors</Company>
-    <Description>Description of throughline.plugin</Description>
+    <Title>RubberDuck</Title>
+    <Company>RubberDuck Authors</Company>
+    <Description>Description of RubberDuck</Description>
   </PropertyGroup>
   
   <ItemGroup>
-    <PackageReference Include="ModelContextProtocol" Version="0.3.0-preview.4" />
-    <PackageReference Include="ModelContextProtocol.AspNetCore" Version="0.3.0-preview.4" />
-    <PackageReference Include="RhinoCommon" Version="8.0.23304.9001" ExcludeAssets="runtime" />
+    <PackageReference Include="Grasshopper" Version="8.0.23304.9001" ExcludeAssets="runtime" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
   </ItemGroup>
   
   <Target Name="BuildYakPackage" AfterTargets="DispatchToInnerBuilds">

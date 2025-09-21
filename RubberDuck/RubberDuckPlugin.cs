@@ -1,7 +1,7 @@
 ﻿using System;
 using Rhino;
 
-namespace throughline.plugin
+namespace RubberDuck
 {
     ///<summary>
     /// <para>Every RhinoCommon .rhp assembly must have one and only one PlugIn-derived
@@ -11,15 +11,15 @@ namespace throughline.plugin
     /// attributes in AssemblyInfo.cs (you might need to click "Project" ->
     /// "Show All Files" to see it in the "Solution Explorer" window).</para>
     ///</summary>
-    public class ThroughlinePlugin : Rhino.PlugIns.PlugIn
+    public class RubberDuckPlugin : Rhino.PlugIns.PlugIn
     {
-        public ThroughlinePlugin()
+        public RubberDuckPlugin()
         {
             Instance = this;
         }
 
-        ///<summary>Gets the only instance of the ThroughlinePlugin plug-in.</summary>
-        public static ThroughlinePlugin Instance { get; private set; }
+        ///<summary>Gets the only instance of the RubberDuckPlugin plug-in.</summary>
+        public static RubberDuckPlugin Instance { get; private set; }
 
         // You can override methods here to change the plug-in behavior on
         // loading and shut down, add options pages to the Rhino _Option command
